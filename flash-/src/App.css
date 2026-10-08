@@ -1,0 +1,114 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.app-container > p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 250px;
+  gap: 15px;
+  max-width: 400px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+}
+
+.flashcard h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.flashcard > p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+}
+
+.answer-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: opacity 0.2s;
+}
+
+.answer-button:hover {
+  opacity: 0.8;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 90%;
+  max-width: 400px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: black;
+}
+
+.card-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white
+  ;
+}
+
+.nav-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nav-button:hover:not(:disabled) {
+  text-decoration: underline;
+}
